@@ -1,0 +1,14 @@
+ Khai quát
+ Đối tượng-object (giống 1 đối tượng cụ thể trong thế giới thực)
+ Mỗi đối tượng có thuộc tính và hành vi
+  - Thuộc tính: Đặc điểm của 1 đối tượng
+  - Phương thức: Hành vi của 1 đối tượng
+ Các đối tượng có phương thức và đặc điểm giống nhau thì được gom lại thành 1 lớp => Class
+ Cấu trúc chung của class: tên lớp, constructors,các thuộc tính(biến lớp),getter,setter, phương thức
+       -COnstructors(hàm tạo) -là hàm để tự động khởi tạo giá trị cho đối tượng, khi đối tượng được sinh ra
+            +Kotlin có 2 loại: Primary Constructors , secondery cotructors
+            +Biến lớp: Khai báo giống khai báo biến thông thường(Qui tắc Camel)
+
+      - get, set
+      - hàm
+      -tham chiếu this
