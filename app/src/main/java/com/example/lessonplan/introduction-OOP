@@ -11,4 +11,25 @@
 
       - get, set
       - hàm
-      -tham chiếu this
+      -tham chiếu this(biến cục bộ và biến tổng). Trong hàm thì mặc định gọi biến cục bộ, dùng this.biến thì sẽ dùng biến tổng
+      - Overloading Method
+        1 Signature gọi là khác nhau nếu chúng khác nhau về hoặc là số lượng đối số, hoặc là kiểu dữ liệu các đối số hoặc là thứ tự các đối số
+        2 Overloading Method: Trong cùng class có nhiều phương thức cùng tên nhưng khác nhau về signature
+        3 Contructor là trường hợp đặc biệt của OverLoading Method
+
+
+
+        -Kế thừa: các lớp con tái sử dụng lại các thành phần của lớp cha đã có, lớp cha phải có từ khoá open để cho phép thừa hưởng
+           Nếu lớp cha có hàm trừu tượng thì lớp con phải kế thừa hàm đó và phải định nghĩa lại cái hàm đó, đừng trước hàm trừu tượng có từ khoá abstract
+         Kế thừa từ Interface:có thể hiểu là 1 tập quy luật, ép các class con của nó phải có cấu trúc mà nó đã quy định
+         OverridingMethod: trong 1 tập các mối quan hệ huyết thống có các phương thức giống signature y xì (nội dung khác nhau)
+
+
+         -Đa hình: là tại từng thời điểm đối tượng sẽ có hình thái khác nhau trong những hoàn cảnh khác nhau
+
+
+         - data class: Lớp đặc biệt, lưu trữ dữ liệu cung cấp sẵn nhuững phương thức toString, equals....
+
+         - enum class: kiểu dữ liệu liệt kê, dùng để lưu trữ tập các giá trị là hằng số không dổi. các giá trị phân cách nhau bởi dấu phâỷ
+
+         -
