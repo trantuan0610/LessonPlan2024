@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".LinearLayout">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="156dp"
+            android:layout_weight="1"
+            android:background="#C4C4C4"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="156dp"
+            android:layout_weight="1"
+            android:background="#813434"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="156dp"
+            android:layout_weight="1"
+            android:background="#54C5B0"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="156dp"
+            android:layout_weight="1"
+            android:background="#260D0D"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="156dp"
+            android:layout_weight="1"
+            android:background="#EF7F7F"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:background="#516561"
+        />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="166dp"
+            android:layout_weight="1"
+            android:background="#9DC8C0"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_weight="1"
+                android:background="#260D0D"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_weight="1"
+                android:background="#EF7F7F"
+                />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>
