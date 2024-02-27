@@ -72,6 +72,7 @@ fun main() {
     var b= 1
     do {
         b++
+
         println(b)
 
     }while (b < 10)
