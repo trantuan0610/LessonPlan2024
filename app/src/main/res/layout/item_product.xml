@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp">
+    
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@drawable/ic_launcher_background"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/tvNameProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mua bán có tâm"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/tvIsActiveProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhóm Đóng"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</LinearLayout>
