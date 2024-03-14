@@ -1,6 +1,9 @@
 package com.example.lessonplan
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -8,18 +11,26 @@ import androidx.recyclerview.widget.RecyclerView
 class MainActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
+    private lateinit var btnEdit: Button
     private lateinit var adapter: ProductAdapter
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         recyclerView = findViewById(R.id.rcvSanPham)
+        btnEdit = findViewById(R.id.btnEdit)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         //Khởi tạo và gắn adapter cho rcv
         adapter = ProductAdapter()
         recyclerView.adapter = adapter
+
+        //sự kiện nhấn button
+        btnEdit.setOnClickListener {
+            startActivity(Intent(this,SecondScreenActivity::class.java))
+        }
 
         // Thêm dữ liệu vào Adapter (có thể thêm dữ liệu từ một nguồn dữ liệu bất kỳ)
         val data: List<Product> = listOf(Product("Tuấn","?",true),
