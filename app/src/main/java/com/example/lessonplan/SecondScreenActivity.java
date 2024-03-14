@@ -19,7 +19,7 @@ public class SecondScreenActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new MyAdapter(data);
+        adapter = new MyAdapter(data,this);
         recyclerView.setAdapter(adapter);
     }
 }
